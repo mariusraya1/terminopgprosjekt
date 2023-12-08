@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css\style.css">
+        <meta charset="utf-8">
+        <title>PHP Innlogging</title>
+    </head>
+    <body>
+
+        
+        <a href="registration.php" class="lagbruker" target="_top">Lag bruker</a>
+        <a href="http://localhost/prosjekt%20terminoppgave/" class="hjem" target="_top">Hjem</a>
+
+        <style>
+            .hjem, .loginn, .lagbruker {
+                font-size: 150%;
+                color: aquamarine;
+                margin-right: 1%;
+            }
+        </style>
+<br><br>
+
+
+        <p>Vennligst logg inn:</p>
+        <form method="post" action="login.php">
+            <label for="brukernavn">Brukernavn:</label>
+            <input type="text" name="brukernavn" /><br />
+            <label for="passord">Passord:</label>
+            <input type="password" name="passord" /><br />
+            
+            <input type="submit" value="Logg inn" name="submit" />
+        </form>
+        <p>Eller klikk <a href="registration.php">her</a> for å registrere ny bruk          
+    </body>
+</html>
